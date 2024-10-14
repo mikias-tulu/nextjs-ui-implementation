@@ -1,13 +1,17 @@
+import BackgroundWrapper from "@/components/BackgroundWrapper";
+import FooterSection from "@/components/FooterSection";
+import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <section className="">
-      <div className="absolute inset-0">
-        <Image src="/background.webp" alt="Background" layout="fill" objectFit="cover" quality={100} />
+    <BackgroundWrapper>
+      <div style={{ position: 'relative', zIndex: 10 }}>
+        <Navbar />
       </div>
-      <Navbar />
-    </section>
+      <HeroSection />
+      <FooterSection />
+    </BackgroundWrapper>
   );
 }
