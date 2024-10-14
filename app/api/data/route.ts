@@ -84,6 +84,41 @@ const staticData = {
       ],
     },
   ],
+  profile: {
+    span: '풀타임, 파트타임',
+    description: '법률 및 인사관리 부담없이 1주일 이내에 원격으로 채용해보세요.',
+    h1: '최고의 실력',
+    h2: '을 가진',
+    h3: '외국인 인재를 찾고 계신가요?',
+    mDesc1: '법률 및 인사관리 부담없이',
+    mDesc2: '1주일 이내에 원격으로 채용해보세요.',
+    underlineCont: '개발자가 필요하신가요?',
+  },
+  footer: {
+    company: {
+      name: '하이퍼하이어',
+      englishName: 'Hyperhire India Private Limited',
+      ceo: {
+        korean: '김주현',
+        english: 'Juhyun Kim',
+      },
+      registrationNumber: '427-86-01187',
+      cinNumber: 'U74110DL2016PTC290812',
+      addressKorea: '서울특별시 강남대로 479, 지하 1층 238호',
+      addressIndia: 'D-138, Street number 11, Jagjeet Nagar, North East Delhi, New Delhi, 110053 India',
+    },
+    contact: {
+      phone: '010-0000-0000',
+      email: 'aaaaa@naver.com',
+      copyright: 'ⓒ 2023 Hyperhire',
+      services: [
+        { title: '해외 개발자 원격 채용', icon: '/iconCode.webp', link: '/remote-developers' },
+        { title: '외국인 원격 채용 (비개발)', icon: '/iconUser.webp', link: '/remote-foreign-hiring' },
+        { title: '한국어 가능 외국인 채용', icon: '/iconKor.webp', link: '/korean-speaking-foreigners' },
+        { title: '해외 개발자 활용 서비스', icon: '/iconSetting.webp', link: '/developer-services' },
+      ],
+    },
+  },
 };
 
 export async function GET() {
