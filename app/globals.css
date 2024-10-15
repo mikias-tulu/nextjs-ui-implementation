@@ -45,11 +45,10 @@ li {
   animation: fadeInUp 500ms ease forwards;
 }
 
-
 .swiper-button-prev:after,
 .swiper-button-next:after {
   color: #fff;
-  font-size: 15px !important; 
+  font-size: 15px !important;
   margin: 0px 0px;
 }
 

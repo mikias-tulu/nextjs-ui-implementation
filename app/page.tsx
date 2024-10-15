@@ -1,8 +1,7 @@
-import BackgroundWrapper from "@/components/BackgroundWrapper";
-import FooterSection from "@/components/FooterSection";
-import HeroSection from "@/components/HeroSection";
-import Navbar from "@/components/Navbar";
-import Image from "next/image";
+import BackgroundWrapper from '@/components/BackgroundWrapper';
+import FooterSection from '@/components/FooterSection';
+import HeroSection from '@/components/HeroSection';
+import Navbar from '@/components/Navbar';
 
 export default function Home() {
   return (

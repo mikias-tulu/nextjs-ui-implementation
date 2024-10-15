@@ -12,8 +12,7 @@ const Dropdown: React.FC<DropdownProps> = ({ items }) => {
           key={index}
           className={`block px-2 py-2 text-gray-700 cursor-pointer ${
             index === 0 ? 'font-bold' : ''
-          } ${index === items.length - 1 ? 'border-t-[2px] border-t-[#F2F4F7]' : ''} hover:font-bold`}
-        >
+          } ${index === items.length - 1 ? 'border-t-[2px] border-t-[#F2F4F7]' : ''} hover:font-bold`}>
           {item}
         </li>
       ))}

@@ -53,8 +53,7 @@ const SwiperSection: React.FC = () => {
           initialSlide={1}
           className="mySwiper"
           slidesPerView={1}
-          onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
-        >
+          onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}>
           {swiperData.map((item, index) => (
             <SwiperSlide key={item.id}>
               <div className={activeIndex === index ? '' : 'mt-20'}>
@@ -71,8 +70,9 @@ const SwiperSection: React.FC = () => {
                     </div>
                   )}
                   <div
-                    className={`px-3 py-9 md:p-9 w-[250px] md:w-[300px] flex flex-col items-center rounded-xl shadow-lg ${activeIndex === index ? 'bg-white' : 'bg-[#EDFCFF]'
-                      }`}>
+                    className={`px-3 py-9 md:p-9 w-[250px] md:w-[300px] flex flex-col items-center rounded-xl shadow-lg ${
+                      activeIndex === index ? 'bg-white' : 'bg-[#EDFCFF]'
+                    }`}>
                     <Image
                       src={item.proImage}
                       alt={`${item.name}'s profile image`}
@@ -88,9 +88,11 @@ const SwiperSection: React.FC = () => {
                         {item.skills.map((skill, skillIndex) => (
                           <p
                             key={skillIndex}
-                            className={`border rounded-md text-sm w-fit px-3 py-1 flex items-center font-black ${activeIndex === swiperData.findIndex((data) => data.id === item.id) ? 'border-[#C1C5CF]' : 'border-[#82BFD4]'
-                              } text-[#5E626F]`}
-                          >
+                            className={`border rounded-md text-sm w-fit px-3 py-1 flex items-center font-black ${
+                              activeIndex === swiperData.findIndex((data) => data.id === item.id)
+                                ? 'border-[#C1C5CF]'
+                                : 'border-[#82BFD4]'
+                            } text-[#5E626F]`}>
                             {skill}
                           </p>
                         ))}

@@ -5,16 +5,11 @@ const staticData = {
     items: [
       {
         title: '채용',
-        dropdown: [
-          '채용',
-          '해외 개발자 원격 채용',
-          '외국인 원격 채용 (비개발 직군)',
-          '한국어 가능 외국인 채용',
-        ],
+        dropdown: ['채용', '해외 개발자 원격 채용', '외국인 원격 채용 (비개발 직군)', '한국어 가능 외국인 채용'],
       },
     ],
-    "menu1": '해외 개발자 활용 서비스', 
-    "buttonText": '문의하기',
+    menu1: '해외 개발자 활용 서비스',
+    buttonText: '문의하기',
   },
   hero: {
     heading: '최고의 실력을 가진 외국인 인재를 찾고 계신가요?',
@@ -94,12 +89,7 @@ const staticData = {
       topSpan: '월 100만원',
       name: 'Abhishek Gupta',
       experience: '마케팅 · 2y+',
-      skills: [
-        '마케팅 콘텐츠 제작',
-        '인스타그램 관리',
-        '트위터 관리',
-        '블로그 글 작성',
-      ],
+      skills: ['마케팅 콘텐츠 제작', '인스타그램 관리', '트위터 관리', '블로그 글 작성'],
     },
     {
       id: 2,
@@ -107,12 +97,7 @@ const staticData = {
       topSpan: '월 100만원',
       name: 'Abhishek Gupta',
       experience: '마케팅 · 2y+',
-      skills: [
-        '마케팅 콘텐츠 제작',
-        '인스타그램 관리',
-        '트위터 관리',
-        '블로그 글 작성',
-      ],
+      skills: ['마케팅 콘텐츠 제작', '인스타그램 관리', '트위터 관리', '블로그 글 작성'],
     },
     {
       id: 3,
@@ -120,15 +105,10 @@ const staticData = {
       topSpan: '월 100만원',
       name: 'Abhishek Gupta',
       experience: '마케팅 · 2y+',
-      skills: [
-        '마케팅 콘텐츠 제작',
-        '인스타그램 관리',
-        '트위터 관리',
-        '블로그 글 작성',
-      ],
+      skills: ['마케팅 콘텐츠 제작', '인스타그램 관리', '트위터 관리', '블로그 글 작성'],
     },
   ],
-  candidateDetails : {
+  candidateDetails: {
     jobType: '풀타임, 파트타임',
     hiringDesc: '법률 및 인사관리 부담없이 1주일 이내에 원격으로 채용해보세요.',
     headingMain: '최고의 실력',
@@ -138,7 +118,7 @@ const staticData = {
     hiringCTA: '1주일 이내에 원격으로 채용해보세요.',
     hiringQuestion: '개발자가 필요하신가요?',
   },
-  
+
   footer: {
     company: {
       name: '하이퍼하이어',
