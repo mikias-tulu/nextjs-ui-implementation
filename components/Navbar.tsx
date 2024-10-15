@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -6,9 +6,14 @@ import NavItem from './NavItem';
 import SvgCloseIcon from './svgs/svgCloseIcon';
 import SvgDashIcon from './svgs/svgDashIcon';
 
+interface NavItemType {
+  title: string;
+  dropdown: string[];
+}
+
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [navItems, setNavItems] = useState<any[]>([]);
+  const [navItems, setNavItems] = useState<NavItemType[]>([]);
   const [buttonText, setButtonText] = useState<string>('');
   const [menuText, setMenuText] = useState<string>('');
 
@@ -19,7 +24,7 @@ const Navbar: React.FC = () => {
       const response = await fetch('/api/data');
       const data = await response.json();
       setNavItems(data.navbar.items);
-      setButtonText(data.navbar.buttonText); 
+      setButtonText(data.navbar.buttonText);
       setMenuText(data.navbar.menu1);
     };
     fetchNavData();
@@ -31,13 +36,9 @@ const Navbar: React.FC = () => {
         <Link href="/" legacyBehavior>
           <Image src="/logo.webp" alt="Logo" className="cursor-pointer md:mx-20" width={130} height={32} />
         </Link>
-        
+
         <button onClick={toggleMenu} className="text-white md:hidden focus:outline-none mr-0 flex items-center">
-          {isOpen ? (
-           <SvgCloseIcon />
-          ) : (
-            <SvgDashIcon />
-          )}
+          {isOpen ? <SvgCloseIcon /> : <SvgDashIcon />}
         </button>
 
         {/* FullScreen Mobile Menu */}
@@ -73,9 +74,7 @@ const Navbar: React.FC = () => {
               <NavItem key={index} item={item} />
             ))}
           </ul>
-          <div className="hidden md:flex gap-20">
-            {menuText}
-          </div>
+          <div className="hidden md:flex gap-20">{menuText}</div>
         </div>
 
         <Link href="#" legacyBehavior>

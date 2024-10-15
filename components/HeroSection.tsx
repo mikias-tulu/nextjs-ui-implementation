@@ -21,11 +21,10 @@ interface ContentItem {
   desc: string;
 }
 
-
 const HeroSection: React.FC = () => {
   const [fadeIn, setFadeIn] = useState(false);
   const [showSubHeading, setShowSubHeading] = useState(false);
-  const [fadeInJobType, setFadeInJobType] = useState(false); 
+  const [fadeInJobType, setFadeInJobType] = useState(false);
   const [candidateDetails, setCandidateDetails] = useState<CandidateDetails | null>(null);
   const [contentData, setContentData] = useState<ContentItem[]>([]);
 
@@ -39,8 +38,8 @@ const HeroSection: React.FC = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setFadeInJobType(true); 
-    }, 800); 
+      setFadeInJobType(true);
+    }, 800);
     return () => clearTimeout(timer);
   }, [fadeIn, showSubHeading]);
 
@@ -60,17 +59,22 @@ const HeroSection: React.FC = () => {
         <div className="text-white space-y-4">
           {candidateDetails ? (
             <>
-             <div className={`mb-4 transition-opacity duration-500 ${fadeInJobType ? 'opacity-100' : 'opacity-0'}`}>
+              <div className={`mb-4 transition-opacity duration-500 ${fadeInJobType ? 'opacity-100' : 'opacity-0'}`}>
                 <span className="text-[#fff] md:text-[#40E2E8] mx-5 md:mx-0 font-black md:font-bold bg-[#8BC4FF] md:bg-white px-3 py-[6px] rounded-lg w-fit text-lg">
                   {candidateDetails.jobType}
                 </span>
                 <SvgQuoteIcon />
               </div>
-              <h1 className={`text-[36px] mx-5 sm:mx-0 md:text-4xl leading-tight font-black animate-fadeInUp ${fadeIn ? 'opacity-100' : 'opacity-0'}`}>
+              <h1
+                className={`text-[36px] mx-5 sm:mx-0 md:text-4xl leading-tight font-black animate-fadeInUp ${fadeIn ? 'opacity-100' : 'opacity-0'}`}>
                 {candidateDetails.headingMain}
-                <span className={`text-[#FFFFFFE5] ${showSubHeading ? 'animate-fadeInUp' : 'opacity-0'}`}>{candidateDetails.subHeading1}</span>
+                <span className={`text-[#FFFFFFE5] ${showSubHeading ? 'animate-fadeInUp' : 'opacity-0'}`}>
+                  {candidateDetails.subHeading1}
+                </span>
                 <br />
-                <span className={`text-[#FFFFFFE5] ${fadeIn ? 'animate-fadeInUp' : 'opacity-0'}`}>{candidateDetails.subHeading2}</span>
+                <span className={`text-[#FFFFFFE5] ${fadeIn ? 'animate-fadeInUp' : 'opacity-0'}`}>
+                  {candidateDetails.subHeading2}
+                </span>
               </h1>
               <p className="hidden md:block text-lg md:text-2xl font-black text-[#FFFFFFE5] animate-fadeInUp">
                 {candidateDetails.hiringHighlight} <br /> {candidateDetails.hiringCTA}

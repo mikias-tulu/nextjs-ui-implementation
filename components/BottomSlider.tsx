@@ -38,9 +38,7 @@ const BottomSlider: React.FC = () => {
           <SwiperSlide key={item.id}>
             <div className="p-4 rounded-lg bg-opacity-10 bg-white flex gap-6 items-center justify-center w-full">
               <Image src={item.imageSrc} alt={item.title} objectFit="contain" quality={100} width={45} height={45} />
-              <p className="text-lg text-center flex-grow font-medium"> 
-                {item.title}
-              </p>
+              <p className="text-lg text-center flex-grow font-medium">{item.title}</p>
             </div>
           </SwiperSlide>
         ))}

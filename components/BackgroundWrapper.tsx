@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { ReactNode } from "react";
+import Image from 'next/image';
+import { ReactNode } from 'react';
 
 interface BackgroundWrapperProps {
   children: ReactNode;
@@ -17,10 +17,8 @@ const BackgroundWrapper: React.FC<BackgroundWrapperProps> = ({ children }) => {
         priority
         style={{ zIndex: -1 }}
       />
-      
-      <div style={{ position: 'relative', zIndex: 1 }}>
-        {children}
-      </div>
+
+      <div style={{ position: 'relative', zIndex: 1 }}>{children}</div>
     </section>
   );
 };
