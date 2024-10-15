@@ -36,12 +36,56 @@ const staticData = {
     ],
   },
   slider: [
-    '해외 마케팅',
-    '퍼블리셔',
-    '캐드원(제도사)',
-    '해외 세일즈',
-    '해외 CS',
-    '해외 마케팅',
+    {
+      id: 1,
+      imageSrc: '/iconAnalytics.webp',
+      title: '해외 마케팅',
+    },
+    {
+      id: 2,
+      imageSrc: '/iconImg.webp',
+      title: '퍼블리셔',
+    },
+    {
+      id: 3,
+      imageSrc: '/iconBox.webp',
+      title: '캐드원(제도사)',
+    },
+    {
+      id: 4,
+      imageSrc: '/iconStar.webp',
+      title: '해외 세일즈',
+    },
+    {
+      id: 5,
+      imageSrc: '/iconPhone.webp',
+      title: '해외 CS',
+    },
+    {
+      id: 6,
+      imageSrc: '/iconAnalytics.webp',
+      title: '해외 마케팅',
+    },
+    {
+      id: 7,
+      imageSrc: '/iconImg.webp',
+      title: '퍼블리셔',
+    },
+    {
+      id: 8,
+      imageSrc: '/iconBox.webp',
+      title: '캐드원(제도사)',
+    },
+    {
+      id: 9,
+      imageSrc: '/iconStar.webp',
+      title: '해외 세일즈',
+    },
+    {
+      id: 10,
+      imageSrc: '/iconPhone.webp',
+      title: '해외 CS',
+    },
   ],
   swiper: [
     {
@@ -84,16 +128,17 @@ const staticData = {
       ],
     },
   ],
-  profile: {
-    span: '풀타임, 파트타임',
-    description: '법률 및 인사관리 부담없이 1주일 이내에 원격으로 채용해보세요.',
-    h1: '최고의 실력',
-    h2: '을 가진',
-    h3: '외국인 인재를 찾고 계신가요?',
-    mDesc1: '법률 및 인사관리 부담없이',
-    mDesc2: '1주일 이내에 원격으로 채용해보세요.',
-    underlineCont: '개발자가 필요하신가요?',
+  candidateDetails : {
+    jobType: '풀타임, 파트타임',
+    hiringDesc: '법률 및 인사관리 부담없이 1주일 이내에 원격으로 채용해보세요.',
+    headingMain: '최고의 실력',
+    subHeading1: '을 가진',
+    subHeading2: '외국인 인재를 찾고 계신가요?',
+    hiringHighlight: '법률 및 인사관리 부담없이',
+    hiringCTA: '1주일 이내에 원격으로 채용해보세요.',
+    hiringQuestion: '개발자가 필요하신가요?',
   },
+  
   footer: {
     company: {
       name: '하이퍼하이어',
