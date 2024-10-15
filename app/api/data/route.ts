@@ -36,12 +36,56 @@ const staticData = {
     ],
   },
   slider: [
-    '해외 마케팅',
-    '퍼블리셔',
-    '캐드원(제도사)',
-    '해외 세일즈',
-    '해외 CS',
-    '해외 마케팅',
+    {
+      id: 1,
+      imageSrc: '/iconAnalytics.webp',
+      title: '해외 마케팅',
+    },
+    {
+      id: 2,
+      imageSrc: '/iconImg.webp',
+      title: '퍼블리셔',
+    },
+    {
+      id: 3,
+      imageSrc: '/iconBox.webp',
+      title: '캐드원(제도사)',
+    },
+    {
+      id: 4,
+      imageSrc: '/iconStar.webp',
+      title: '해외 세일즈',
+    },
+    {
+      id: 5,
+      imageSrc: '/iconPhone.webp',
+      title: '해외 CS',
+    },
+    {
+      id: 6,
+      imageSrc: '/iconAnalytics.webp',
+      title: '해외 마케팅',
+    },
+    {
+      id: 7,
+      imageSrc: '/iconImg.webp',
+      title: '퍼블리셔',
+    },
+    {
+      id: 8,
+      imageSrc: '/iconBox.webp',
+      title: '캐드원(제도사)',
+    },
+    {
+      id: 9,
+      imageSrc: '/iconStar.webp',
+      title: '해외 세일즈',
+    },
+    {
+      id: 10,
+      imageSrc: '/iconPhone.webp',
+      title: '해외 CS',
+    },
   ],
   swiper: [
     {
@@ -84,6 +128,42 @@ const staticData = {
       ],
     },
   ],
+  candidateDetails : {
+    jobType: '풀타임, 파트타임',
+    hiringDesc: '법률 및 인사관리 부담없이 1주일 이내에 원격으로 채용해보세요.',
+    headingMain: '최고의 실력',
+    subHeading1: '을 가진',
+    subHeading2: '외국인 인재를 찾고 계신가요?',
+    hiringHighlight: '법률 및 인사관리 부담없이',
+    hiringCTA: '1주일 이내에 원격으로 채용해보세요.',
+    hiringQuestion: '개발자가 필요하신가요?',
+  },
+  
+  footer: {
+    company: {
+      name: '하이퍼하이어',
+      englishName: 'Hyperhire India Private Limited',
+      ceo: {
+        korean: '김주현',
+        english: 'Juhyun Kim',
+      },
+      registrationNumber: '427-86-01187',
+      cinNumber: 'U74110DL2016PTC290812',
+      addressKorea: '서울특별시 강남대로 479, 지하 1층 238호',
+      addressIndia: 'D-138, Street number 11, Jagjeet Nagar, North East Delhi, New Delhi, 110053 India',
+    },
+    contact: {
+      phone: '010-0000-0000',
+      email: 'aaaaa@naver.com',
+      copyright: 'ⓒ 2023 Hyperhire',
+      services: [
+        { title: '해외 개발자 원격 채용', icon: '/iconCode.webp', link: '/remote-developers' },
+        { title: '외국인 원격 채용 (비개발)', icon: '/iconUser.webp', link: '/remote-foreign-hiring' },
+        { title: '한국어 가능 외국인 채용', icon: '/iconKor.webp', link: '/korean-speaking-foreigners' },
+        { title: '해외 개발자 활용 서비스', icon: '/iconSetting.webp', link: '/developer-services' },
+      ],
+    },
+  },
 };
 
 export async function GET() {
